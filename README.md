@@ -1,4 +1,4 @@
-# Portfolio personal
+# Porfolio personal
 
 ## 🛠️ Estructura del proyecto
 
