@@ -3,7 +3,7 @@ import { URL } from './src/data/constants'
 
 import tunnel from 'astro-tunnel'
 import icon from 'astro-icon'
-import { astroImageTools } from 'astro-imagetools'
+// import { astroImageTools } from 'astro-imagetools'
 import i18n from '@astrolicious/i18n'
 import sitemap from 'astro-sitemap'
 import playformCompress from '@playform/compress'
@@ -23,7 +23,7 @@ export default defineConfig({
   integrations: [
     tunnel(),
     icon(),
-    astroImageTools,
+    // astroImageTools,
     i18n({
       defaultLocale: 'es',
       locales: ['es', 'en']

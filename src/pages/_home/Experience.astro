@@ -35,7 +35,7 @@ const normalizeTitle = title
     </div>
     <div class="jobs-descriptions">
       {
-        jobsDescription.map(({ title, time, description, list }, index) => (
+        jobsDescription.map(({ title, time, description, techs }, index) => (
           <div class:list={['description tabcontent', { active: index === 0 }]}>
             <h3>{title}</h3>
             <div class="job-time">
@@ -49,12 +49,19 @@ const normalizeTitle = title
               ))}
               {time.length <= 1 && <span class="badge">Actual</span>}
             </div>
-            <p>{description}</p>
-            <ul>
-              {list.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
+            {Array.isArray(description) ? (
+              description.map((desc) => <p>{desc}</p>)
+            ) : (
+              <p>{description}</p>
+            )}
+            {techs && techs.length > 0 && (
+              <div class="tech-stack">
+                <span class="tech-label">Tech stack:</span>
+                {techs.map((tech) => (
+                  <span class="tech-badge">{tech}</span>
+                ))}
+              </div>
+            )}
           </div>
         ))
       }
@@ -209,6 +216,34 @@ const normalizeTitle = title
         & p,
         & ul {
           color: var(--text-description-color);
+        }
+
+        & .tech-stack {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          align-items: center;
+          margin-top: 16px;
+
+          & .tech-label {
+            font-weight: 500;
+            color: var(--text-color);
+            margin-right: 8px;
+          }
+
+          & .tech-badge {
+            background-color: var(--bg-secondary-color);
+            color: var(--text-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition-bg);
+
+            &:hover {
+              border-color: var(--text-color);
+            }
+          }
         }
       }
     }

@@ -1,6 +1,6 @@
 {
-  "title": "Desarrollador Web Frontend - Felix Rangel",
-  "description": "Desarrollador Web Frontend de Estelí, Nicaragua. Especialista en HTML5, CSS5, JavaScript ES6+, Node.js y WordPress.",
+  "title": "Inteligencia Artificial: Ingeniero en ML & Computer Vision - Santiago Ponce Arrocha",
+  "description": "Especialista en ML & Visión por Computación | Automatizaciones & IA Generativa & Lenguajes Naturales",
   "navbar": [
     {
       "label": "Inicio",
@@ -21,27 +21,78 @@
   ],
   "hero": {
     "job_availability": "¡Disponible para trabajar!",
-    "title": "¡Hola soy Felix Rangel!",
-    "job_title": "<strong>Desarrollador Web Frontend</strong> de Estelí, Nicaragua.",
-    "description": "Especialista en HTML5, CSS5, JavaScript ES6+, Node.js y WordPress.",
-    "cta": "Contactame"
+    "title": "¡Hola soy Santiago!",
+    "job_title": "<strong>Ingeniero en Inteligencia Artificial - Santiago Ponce Arrocha</strong> - Málaga, España.",
+    "description": "Especialista en ML & Visión por Computación | Automatizaciones & IA Generativa & Lenguajes Naturales",
+    "cta": "Contáctame"
   },
   "experience": {
     "title": "Experiencia laboral",
     "jobs": {
-      "jobs_title": ["Freelance", "HD Media Nicaragua"],
+      "jobs_title": ["Freelance", "inOne Golf", "Investigación"],
       "jobs_description": [
         {
-          "title": "Desarrollador Web Frontend",
-          "time": ["Dic 2021"],
-          "description": "Creo sitios web con diseños modernos y aplicando buenas prácticas de UI/UX. También me encargo de rediseñar, optimizar el posicionamiento SEO, aumentar las medidas de seguridad y optimizar el rendimiento de velocidad de sitios web, para aumentar la taza de conversión y las visitas.",
-          "list": ["Diseño de sitios web", "Optimización de sitios web"]
+          "title": "Desarrollador Freelance",
+          "time": ["Marzo 2023"],
+          "description": [
+            "Como desarrollador freelance, me especializo en transformar problemas complejos en soluciones tecnológicas eficientes. Combino el desarrollo de software a medida con la potencia de la Inteligencia Artificial y la orquestación de flujos de trabajo automatizados.",
+            "¿Tienes una idea o un desafío técnico? Estoy totalmente abierto a proyectos particulares y colaboraciones a medida. Si tienes una necesidad específica en tu negocio o una idea que quieres validar, escríbeme sin ningún compromiso. Estaré encantado de escuchar tus dudas y proponer una solución técnica viable antes de que decidas nada.",
+            "Experiencia destacada en el sector Inmobiliario (PropTech): Tengo experiencia desarrollando herramientas de gestión automatizada para inmobiliarias. Un ejemplo reciente es el desarrollo de Veronda:",
+            "Veronda es una solución impulsada por Inteligencia Artificial diseñada para automatizar la gestión integral de facturas, recibos y contratos.",
+            "Hablemos: No dejes que la parte técnica frene tu proyecto. Contáctame y veamos cómo puedo ayudarte."
+          ],
+          "techs": [
+            "React Native",
+            "Expo",
+            "n8n",
+            "Inteligencia Artificial",
+            "Automatización de flujos",
+            "Node.js",
+            "JavaScript",
+            "TypeScript",
+            "OCR",
+            "Backend Integrations",
+            "PropTech"
+          ]
         },
         {
-          "title": "Desarrollador Web en WordPress",
-          "time": ["Nov 2020", "Oct 2021"],
-          "description": "Me encargué de desarrollar sitios web en WordPress para clientes de Nicaragua, durante mi tiempo en la agencia aporté mi conocimiento en seguridad web aumentando las medidas y disminuyendo las brechas de seguridad en WordPress, configurando plugins y estableciendo cabeceras HTTP como Content-Security-Policy (CSP), Cross-Origin-Resource-Policy (CORP), Cross-Origin-Opener-Policy (COOP), etc.",
-          "list": ["Diseño de sitios web", "Optimización de sitios web"]
+          "title": "Científico de Datos - Visión por Computación",
+          "time": ["Enero 2026"],
+          "description": [
+            "Diseño e implementación en un CRM de un flujo de trabajo automatizado utilizando n8n para orquestar un chatbot inteligente de productos y servicios, que opere en múltiples canales de comunicación como WhatsApp y otras plataformas de mensajería.",
+            "Participación en el desarrollo de una plataforma de software para el sector inmobiliario y de la construcción, orientada a automatizar la validación técnica y urbanística de planos residenciales mediante modelos de visión artificial e inteligencia artificial."
+          ],
+          "techs": [
+            "Python",
+            "OpenCV",
+            "TensorFlow",
+            "PyTorch",
+            "n8n",
+            "LangChain",
+            "Data Science",
+            "Natural Language Processing (NLP)",
+            "Workflow Automation (n8n)",
+            "LLM Integration",
+            "AI-Driven Software Platforms",
+            "Computer Vision Data Pipelines",
+            "Object Detection & Semantic Segmentation",
+            "Computer Vision",
+            "AI System Architecture"
+          ]
+        },
+        {
+          "title": "Investigador en la Universidad de Málaga - SCBI Picasso",
+          "time": ["Nov 2024", "Julio 2025"],
+          "description": "Trabajo realizado en el SCBI Picasso, el centro de supercomputación de la Universidad de Málaga. Diseño e implementación desde cero de un sistema completo para el renderizado neural y la síntesis de nuevas vistas de escenas 3D. Enfoque en el aprendizaje de escenas 3D a partir de imágenes mediante modelos de campos de radiancia volumétricos optimizables (como Gaussian Splatting), con el objetivo de generar nuevas perspectivas desde puntos de vista arbitrarios.",
+          "techs": [
+            "Python",
+            "PyTorch",
+            "Visual Studio Code",
+            "Docker",
+            "YOLO",
+            "Adobe Creative Suite",
+            "WSL HPC (Picasso)"
+          ]
         }
       ]
     }
@@ -119,7 +170,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "subtitle": "Soy mod de Midudev y ManzDev pero más feliz me siento siendo mod de AnaRangel",
+    "subtitle": "Soy resolutivo, extrovertido, me gusta Pokémon y el pan con aceite. ",
     "description": "Soy un Desarrollador Web Frontend y WordPress con más de 3 años de experiencia, especializado en crear diseños modernos y optimizar el rendimiento web, con un enfoque en tecnologías como HTML 5, CSS 3, JavaScript ES6+ y WordPress. Manejo frameworks como React y Astro, y soy experto en constructores visuales de WordPress, además de tener un fuerte conocimiento técnico en Core Web Vitals, lo que me convierte en un profesional apasionado y altamente cualificado para cualquier proyecto de desarrollo web."
   },
   "contact": {
