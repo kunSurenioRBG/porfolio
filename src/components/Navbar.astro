@@ -5,9 +5,9 @@ import ToggleSwitch from '@components/ToggleSwitch.astro'
 
 const links = t('navbar', { returnObjects: true })
 const currentLocale = Astro.currentLocale || 'es'
-const base = import.meta.env.BASE_URL
+const base = import.meta.env.BASE_URL // /porfolio/
 const isEnglish = currentLocale === 'en'
-// Asegurarse de que no haya slash duplicado
+// Construir URLs: /porfolio/ para español y /porfolio/en/ para inglés
 const switchLocaleUrl = isEnglish ? base : `${base}en/`
 ---
 
