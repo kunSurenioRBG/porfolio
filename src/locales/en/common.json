@@ -184,6 +184,8 @@
   "social_media": {
     "title": "Social Media",
     "subtitle": "Follow me on social media for daily content about AI, Machine Learning and personal development",
+    "linkedin_fallback": "Visit my",
+    "youtube_fallback": "Subscribe to my",
     "linkedin_url": "kunsurenio",
     "youtube_url": "kunsurenio"
   },

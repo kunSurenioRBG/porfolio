@@ -1,13 +1,23 @@
 ---
+/* eslint-disable camelcase */
 import { Icon } from 'astro-icon/components'
 import { t } from 'i18n:astro'
 import { getLocaleFromAstro } from '../../utils/locale'
 
 // eslint-disable-next-line camelcase
-const { title, subtitle, linkedin_url, youtube_url } = t('social_media', {
+const socialMedia = t('social_media', {
   returnObjects: true,
   lng: getLocaleFromAstro(Astro)
-})
+}) as Record<string, string>
+
+const {
+  title,
+  subtitle,
+  linkedin_url,
+  youtube_url,
+  linkedin_fallback,
+  youtube_fallback
+} = socialMedia
 ---
 
 <section id="redes-sociales" class="social-media">
@@ -36,11 +46,13 @@ const { title, subtitle, linkedin_url, youtube_url } = t('social_media', {
           allowfullscreen=""
           title="LinkedIn Feed"></iframe>
         <p class="feed-fallback">
-          Visita mi perfil de <a
+          {linkedin_fallback}{' '}
+          <a
             href="https://www.linkedin.com/in/kunsurenio"
             target="_blank"
             rel="noopener noreferrer">LinkedIn</a
-          > para ver mis últimas publicaciones.
+          >
+          .
         </p>
       </div>
     </div>
@@ -68,15 +80,16 @@ const { title, subtitle, linkedin_url, youtube_url } = t('social_media', {
             title="YouTube Videos"></iframe>
         </div>
         <p class="feed-fallback">
-          {/* eslint-disable-next-line camelcase */}
-          Suscríbete a mi canal de <a
+          {youtube_fallback}{' '}
+          <a
             href={`https://www.youtube.com/@${
               // eslint-disable-next-line camelcase
               youtube_url
             }`}
             target="_blank"
             rel="noopener noreferrer">YouTube</a
-          > para más contenido.
+          >
+          .
         </p>
       </div>
     </div>

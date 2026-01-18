@@ -184,6 +184,8 @@
   "social_media": {
     "title": "Redes Sociales",
     "subtitle": "Sígueme en mis redes para estar al día con contenido sobre IA, Machine Learning y desarrollo personal",
+    "linkedin_fallback": "Visita mi perfil de",
+    "youtube_fallback": "Suscríbete a mi canal de",
     "linkedin_url": "kunsurenio",
     "youtube_url": "kunsurenio"
   },
