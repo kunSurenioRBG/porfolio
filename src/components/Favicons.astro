@@ -1,15 +1,19 @@
-<link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+---
+const base = import.meta.env.BASE_URL
+---
+
+<link rel="icon" type="image/svg+xml" href={`${base}/favicons/favicon.svg`} />
 <meta name="apple-mobile-web-app-title" content="Unicorn Sparkle" />
-<link rel="shortcut icon" href="/favicons/favicon.ico" />
-<link rel="manifest" href="/favicons/site.webmanifest" />
+<link rel="shortcut icon" href={`${base}/favicons/favicon.ico`} />
+<link rel="manifest" href={`${base}/favicons/site.webmanifest`} />
 <link
   rel="icon"
   type="image/png"
-  href="/favicons/favicon-48x48.png"
+  href={`${base}/favicons/favicon-48x48.png`}
   sizes="48x48"
 />
 <link
   rel="apple-touch-icon"
   sizes="180x180"
-  href="/favicons/apple-touch-icon.png"
+  href={`${base}/favicons/apple-touch-icon.png`}
 />
