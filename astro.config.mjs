@@ -31,10 +31,7 @@ export default defineConfig({
     icon(),
     i18n({
       defaultLocale: 'es',
-      locales: ['es', 'en'],
-      routing: {
-        prefixDefaultLocale: false
-      }
+      locales: ['es', 'en']
     }),
     sitemap({
       canonicalURL: 'https://kunsureniorbg.github.io/porfolio',

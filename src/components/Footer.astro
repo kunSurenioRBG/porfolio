@@ -1,8 +1,10 @@
 ---
 import { t } from 'i18n:astro'
+import { getLocaleFromAstro } from '../utils/locale'
 
 const { copyright } = t('footer', {
-  returnObjects: true
+  returnObjects: true,
+  lng: getLocaleFromAstro(Astro)
 })
 
 const year = new Date().getFullYear()

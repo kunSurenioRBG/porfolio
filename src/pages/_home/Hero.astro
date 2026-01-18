@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components'
 import { t } from 'i18n:astro'
 import Button from '@components/Button.astro'
+import { getLocaleFromAstro } from '../../utils/locale'
 
 const {
   job_availability: jobAvailability,
@@ -10,7 +11,8 @@ const {
   description,
   cta
 } = t('hero', {
-  returnObjects: true
+  returnObjects: true,
+  lng: getLocaleFromAstro(Astro)
 })
 ---
 

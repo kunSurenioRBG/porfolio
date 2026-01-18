@@ -2,13 +2,13 @@
 import { Icon } from 'astro-icon/components'
 import { t } from 'i18n:astro'
 import ToggleSwitch from '@components/ToggleSwitch.astro'
+import { getLocaleFromAstro } from '../utils/locale'
 
-const links = t('navbar', { returnObjects: true })
-const currentLocale = Astro.currentLocale || 'es'
+const locale = getLocaleFromAstro(Astro)
+const links = t('navbar', { returnObjects: true, lng: locale })
 const base = import.meta.env.BASE_URL // /porfolio/
-const isEnglish = currentLocale === 'en'
-// Construir URLs: /porfolio/ para español y /porfolio/en/ para inglés
-const switchLocaleUrl = isEnglish ? base : `${base}en/`
+const isEnglish = locale === 'en'
+const switchLocaleUrl = isEnglish ? base : `${base}/en/`
 ---
 
 <nav id="menu">

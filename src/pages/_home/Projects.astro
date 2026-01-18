@@ -1,9 +1,11 @@
 ---
 import { t } from 'i18n:astro'
 import CardProject from '@components/CardProject.astro'
+import { getLocaleFromAstro } from '../../utils/locale'
 
 const { title, projects } = t('projects', {
-  returnObjects: true
+  returnObjects: true,
+  lng: getLocaleFromAstro(Astro)
 })
 ---
 

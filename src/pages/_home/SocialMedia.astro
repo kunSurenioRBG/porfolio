@@ -1,10 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components'
 import { t } from 'i18n:astro'
+import { getLocaleFromAstro } from '../../utils/locale'
 
 // eslint-disable-next-line camelcase
 const { title, subtitle, linkedin_url, youtube_url } = t('social_media', {
-  returnObjects: true
+  returnObjects: true,
+  lng: getLocaleFromAstro(Astro)
 })
 ---
 

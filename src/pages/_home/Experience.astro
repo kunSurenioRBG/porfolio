@@ -1,8 +1,10 @@
 ---
 import { t } from 'i18n:astro'
+import { getLocaleFromAstro } from '../../utils/locale'
 
 const { title, jobs } = t('experience', {
-  returnObjects: true
+  returnObjects: true,
+  lng: getLocaleFromAstro(Astro)
 })
 
 const { jobs_title: jobsTitle, jobs_description: jobsDescription } = jobs
