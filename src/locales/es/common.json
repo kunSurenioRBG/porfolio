@@ -119,7 +119,7 @@
       {
         "title": "Representación neuronal y segmentación dinámica para la generación de nuevas vistas en escenas 3D",
         "description": "Diseñó e implementó un sistema completo desde cero para la renderización neuronal y la síntesis de vistas innovadoras de escenas 3D. Este trabajo se centra en el aprendizaje de escenas 3D a partir de imágenes mediante modelos de campo de radiancia volumétrica optimizables (como la dispersión gaussiana), con el objetivo de generar nuevas perspectivas de la escena desde puntos de vista arbitrarios.",
-        "image": "/public/media/TAA_MSAA_comparativa.gif",
+        "image": "/public/media/class_id_scene_bicycle.gif",
         "techs": [
           "Python",
           "PyTorch",
@@ -133,7 +133,7 @@
       {
         "title": "Técnicas de antialiasing para juegos y escenas 3D en tiempo real mediante redes neuronales profundas",
         "description": "El objetivo principal de este proyecto es investigar, analizar y desarrollar técnicas de antialiasing basadas en redes neuronales profundas para su aplicación en videojuegos. Se han desarrollado múltiples modelos utilizando diferentes arquitecturas, como CNN, UNet y Transformer.",
-        "image": "/public/media/class_id_scene_bicycle.gif",
+        "image": "/public/media/TAA_MSAA_comparativa.gif",
         "techs": [
           "Python",
           "OpenCV",
